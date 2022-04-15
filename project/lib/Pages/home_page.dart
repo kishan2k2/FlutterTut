@@ -17,7 +17,12 @@ class HomePage extends StatelessWidget {
         // toolbarTextStyle: Colors.orange,
       ),
       body: Center(
-        child: Text("Hello sahil My name: $name RollNo: $rn"),
+        child: Text(
+          "Hello kapil",
+          style: TextStyle(
+            fontSize: 100,
+          ),
+        ),
         // Text(" name: $name RollNo: $rn")
       ),
       drawer: Drawer(
