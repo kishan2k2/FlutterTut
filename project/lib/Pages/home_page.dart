@@ -18,11 +18,12 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Text(
-          "Hello kapil",
+          "Hello Sahil, Kaise lagi animations3",
           style: TextStyle(
-            fontSize: 100,
+            fontSize: 50,
           ),
         ),
+
         // Text(" name: $name RollNo: $rn")
       ),
       drawer: Drawer(
