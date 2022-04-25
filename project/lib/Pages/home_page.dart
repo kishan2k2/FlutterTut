@@ -4,6 +4,8 @@
 import 'package:flutter/material.dart';
 import 'package:project/Pages/login_page.dart';
 
+import '../Widgets/drawer.dart';
+
 class HomePage extends StatelessWidget {
   var name = "kishan";
   var rn = 47;
@@ -26,10 +28,10 @@ class HomePage extends StatelessWidget {
 
         // Text(" name: $name RollNo: $rn")
       ),
-      drawer: Drawer(
-        child: Text("Unit-01"),
-        // "/": (context)=>LoginPage(),
-      ),
+      drawer: Mydrawer(
+
+          // "/": (context)=>LoginPage(),
+          ),
     );
   }
 }

@@ -4,7 +4,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:project/Pages/home_page.dart';
-import 'package:project/Pages/utils/routes.dart';
+import 'package:project/utils/routes.dart';
+
+import '../utils/routes.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
