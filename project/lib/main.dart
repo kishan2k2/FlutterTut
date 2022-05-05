@@ -6,6 +6,7 @@ import 'Pages/home_page.dart';
 import 'dart:ui';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'Widgets/themes.dart';
 import 'utils/routes.dart';
 
 void main() {
@@ -23,15 +24,11 @@ class CodePur extends StatelessWidget {
     return MaterialApp(
       // home: HomePage(),
       themeMode: ThemeMode.light,
-      theme: ThemeData(
-          primarySwatch: Colors.deepPurple,
-          fontFamily: GoogleFonts.lato().fontFamily,
-          primaryTextTheme: GoogleFonts.latoTextTheme()),
-      darkTheme: ThemeData(
-        brightness: Brightness.dark,
-      ),
+      theme: MyTheme.lightTheme(context),
+      darkTheme: MyTheme.darkTheme(context),
+      debugShowCheckedModeBanner: false,
       routes: {
-        "/": (context) => HomePage(),
+        "/": (context) => LoginPage(),
         Myroutes.homeRoute: (context) => HomePage(),
         Myroutes.loginRoute: (context) => LoginPage(),
       },
